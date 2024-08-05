@@ -11,4 +11,13 @@ def line_splitter(line):
     return line.split()
 
 
+# given array of strings, splits each string by space, and returns
+# the result array of string arrays
+def lines_splitter(lines):
+    lines = []
+    for line in lines:
+        lines.append(line_splitter(line))
+    return lines
+
+
 
